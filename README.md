@@ -1,6 +1,6 @@
 # Introduction to Zo Computer: Orin's Journey
 
-An interactive presentation introducing Zo Computer through Orin's Journey—from navigating AI infrastructure alone to flying with an AI-powered personal cloud computer.
+An interactive presentation introducing Zo Computer through Orin's Journey. Sayyid, Sheikh of the PAL Kingdom, commissions a travelling dwarf paladin to discover a faster path from AI ideas to working systems.
 
 ## Run locally
 
@@ -33,4 +33,3 @@ npm run export
 ```
 
 The deck is automatically deployed to GitHub Pages when changes are pushed to `main`.
-
