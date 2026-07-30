@@ -286,7 +286,7 @@ body::before {
 .hero-mark {
   position: absolute;
   left: 123px;
-  bottom: 82px;
+  bottom: 238px;
   z-index: 4;
   display: flex;
   align-items: center;
@@ -302,6 +302,64 @@ body::before {
   width: 84px;
   height: 1px;
   background: var(--gold);
+}
+
+.qr-card {
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--parchment);
+  text-decoration: none;
+}
+
+.reveal .slides section.slide > .qr-card {
+  position: absolute;
+  width: max-content;
+}
+
+.qr-card img {
+  display: block;
+  width: 152px;
+  height: 152px;
+  padding: 7px;
+  border: 1px solid rgba(227, 180, 94, 0.72);
+  background: #f3e7ca;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+}
+
+.qr-card span {
+  display: block;
+}
+
+.qr-card strong,
+.qr-card small {
+  display: block;
+}
+
+.qr-card strong {
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.qr-card small {
+  margin-top: 8px;
+  color: var(--parchment-muted);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.qr-card--deck {
+  left: 122px;
+  bottom: 62px;
+}
+
+.qr-card--linkedin {
+  left: 140px;
+  bottom: 70px;
 }
 
 /* Slide 02 — Intro */
