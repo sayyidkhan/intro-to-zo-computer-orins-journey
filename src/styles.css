@@ -371,11 +371,6 @@ body::before {
   bottom: 70px;
 }
 
-.qr-card--room {
-  left: 120px;
-  bottom: 62px;
-}
-
 /* Slide 02 — Intro */
 
 .intro-grid {
@@ -1489,6 +1484,61 @@ body::before {
   color: var(--parchment);
   font-family: var(--display);
   font-size: 28px;
+}
+
+.closing-actions {
+  position: absolute;
+  top: 700px;
+  left: 122px;
+  z-index: 6;
+  display: flex;
+  gap: 38px;
+}
+
+.closing-qr {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 375px;
+  color: var(--parchment);
+  text-decoration: none;
+}
+
+.closing-qr img {
+  display: block;
+  width: 144px;
+  height: 144px;
+  padding: 7px;
+  border: 1px solid rgba(227, 180, 94, 0.72);
+  background: #f3e7ca;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+}
+
+.closing-qr span,
+.closing-qr strong,
+.closing-qr small {
+  display: block;
+}
+
+.closing-qr strong {
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.closing-qr small {
+  max-width: 190px;
+  margin-top: 8px;
+  color: var(--parchment-muted);
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+.closing-qr--signup {
+  padding-left: 38px;
+  border-left: 1px solid rgba(227, 180, 94, 0.3);
 }
 
 .closing-signoff {
