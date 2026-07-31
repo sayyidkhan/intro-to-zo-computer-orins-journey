@@ -361,9 +361,33 @@ body::before {
   line-height: 1.35;
 }
 
-.qr-card--deck {
+.hero-access {
+  position: absolute;
   left: 122px;
   bottom: 62px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.hero-access .qr-card {
+  gap: 16px;
+}
+
+.hero-access .qr-card img {
+  width: 148px;
+  height: 148px;
+  padding: 6px;
+}
+
+.hero-access .qr-card strong {
+  font-size: 20px;
+}
+
+.hero-access .qr-card small {
+  margin-top: 7px;
+  font-size: 14px;
 }
 
 .qr-card--linkedin {
