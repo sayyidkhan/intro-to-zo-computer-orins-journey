@@ -422,53 +422,67 @@
 
         <section class="slide slide--map" data-slide="08">
           <div class="slide-frame" aria-hidden="true"></div>
-          <div class="corner-label">What I want to explore</div>
+          <img
+            class="operator-map-art"
+            src="./assets/slide-08-operator-map.png"
+            alt=""
+            aria-hidden="true"
+            data-animate
+          />
+          <div class="corner-label">From computer → operator</div>
 
           <header class="slide-heading">
-            <p class="eyebrow" data-animate>My operator map</p>
-            <h2 data-animate>Four destinations.<br /><span>One personal cloud.</span></h2>
+            <p class="eyebrow" data-animate>My first four use cases</p>
+            <h2 data-animate>Four jobs I want<br /><span>Zo to keep running.</span></h2>
+            <p class="operator-map__lead" data-animate>
+              One persistent AI computer behind all four.
+            </p>
           </header>
 
-          <div class="operator-map" data-map>
-            <div class="operator-map__path operator-map__path--one" aria-hidden="true"></div>
-            <div class="operator-map__path operator-map__path--two" aria-hidden="true"></div>
-            <div class="operator-map__path operator-map__path--three" aria-hidden="true"></div>
-
-            <div class="map-stop map-stop--one" data-animate>
+          <div class="operator-jobs">
+            <div class="operator-job" data-animate>
               <span>01</span>
-              <strong>Launch Gate</strong>
-              <small>Idea → live page</small>
+              <div>
+                <strong>Ship a live page</strong>
+                <small>Describe the idea → publish a working page</small>
+              </div>
             </div>
-            <div class="map-stop map-stop--two" data-animate>
+            <div class="operator-job" data-animate>
               <span>02</span>
-              <strong>Scout Tower</strong>
-              <small>Recurring research</small>
+              <div>
+                <strong>Watch the market</strong>
+                <small>Recurring research → send me the brief</small>
+              </div>
             </div>
-            <div class="map-stop map-stop--three" data-animate>
+            <div class="operator-job" data-animate>
               <span>03</span>
-              <strong>Operations Keep</strong>
-              <small>Briefings + follow-ups</small>
+              <div>
+                <strong>Handle the follow-up</strong>
+                <small>Emails, reminders and next steps</small>
+              </div>
             </div>
-            <div class="map-stop map-stop--four" data-animate>
+            <div class="operator-job" data-animate>
               <span>04</span>
-              <strong>Toolsmith Forge</strong>
-              <small>Narrow internal tools</small>
-            </div>
-
-            <div class="map-compass" data-animate aria-label="Zo Computer is at the center of the operator map">
-              <img src="./assets/zo-computer-logo.png" alt="" />
-              <strong>ZO</strong>
+              <div>
+                <strong>Prototype a small tool</strong>
+                <small>Test one workflow before building full SaaS</small>
+              </div>
             </div>
           </div>
 
+          <p class="operator-map__takeaway" data-animate>
+            One place to keep the context, tools and workflows together.
+          </p>
+
           <aside class="notes">
-            These are the four areas I want to compound: test offers quickly, keep a scout watching the
-            market, remove recurring business operations, and build narrow tools before investing in a
-            full SaaS product.
+            Frame these as four jobs, not four products: ship ideas, watch the market, handle the
+            follow-up, and prototype focused tools. The point is that Zo can keep the context, tools,
+            and workflows together in one persistent computer.
 
             [Sources]
             - Use cases and framing: presenter's proposed applications.
-            - Zo logo: user-supplied asset.
+            - Operator-map illustration generated with OpenAI image generation from the user-supplied
+              Orin references, 31 July 2026.
             [/Sources]
           </aside>
         </section>
