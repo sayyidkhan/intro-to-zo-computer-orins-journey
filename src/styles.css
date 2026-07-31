@@ -415,7 +415,7 @@ body::before {
 .hero-partners__logos {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .hero-partners__logo {
@@ -436,7 +436,7 @@ body::before {
 }
 
 .hero-partners__logo--alchemist {
-  width: 210px;
+  width: 128px;
 }
 
 .qr-card--linkedin {
