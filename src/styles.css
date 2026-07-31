@@ -195,6 +195,15 @@ body::before {
   text-align: center;
 }
 
+.narrative-visual {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  filter: saturate(0.88) contrast(1.05);
+}
+
 [data-animate] {
   visibility: visible;
 }
@@ -360,6 +369,11 @@ body::before {
 .qr-card--linkedin {
   left: 140px;
   bottom: 70px;
+}
+
+.qr-card--room {
+  left: 120px;
+  bottom: 62px;
 }
 
 /* Slide 02 — Intro */
@@ -740,6 +754,17 @@ body::before {
     linear-gradient(145deg, #14110d, #080706 68%) !important;
 }
 
+.narrative-visual--journey {
+  top: 64px;
+  right: 38px;
+  width: 980px;
+  height: 470px;
+  opacity: 0.68;
+  object-position: center;
+  -webkit-mask-image: radial-gradient(ellipse at 66% 40%, #000 0 46%, transparent 78%);
+  mask-image: radial-gradient(ellipse at 66% 40%, #000 0 46%, transparent 78%);
+}
+
 .journey-line {
   position: relative;
   z-index: 4;
@@ -824,6 +849,17 @@ body::before {
   padding-top: 82px !important;
 }
 
+.narrative-visual--comparison {
+  top: 238px;
+  left: 100px;
+  width: 1720px;
+  height: 620px;
+  opacity: 0.3;
+  object-position: center;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 0 58%, transparent 94%);
+  mask-image: radial-gradient(ellipse at center, #000 0 58%, transparent 94%);
+}
+
 .slide--comparison .slide-heading h2 {
   font-size: 64px;
 }
@@ -847,7 +883,7 @@ body::before {
   padding: 48px 54px 40px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.018);
+  background: rgba(8, 7, 6, 0.6);
 }
 
 .comparison-side--vps {
@@ -858,7 +894,7 @@ body::before {
   border-right: 1px solid rgba(227, 180, 94, 0.58);
   background:
     radial-gradient(circle at 85% 20%, rgba(227, 180, 94, 0.15), transparent 38%),
-    rgba(168, 111, 46, 0.07);
+    rgba(18, 13, 8, 0.58);
 }
 
 .comparison-side__top {
@@ -952,6 +988,8 @@ body::before {
 }
 
 .comparison-footer {
+  position: relative;
+  z-index: 4;
   margin-top: 34px !important;
   color: var(--parchment-muted);
   font-family: var(--display) !important;
@@ -963,6 +1001,17 @@ body::before {
 
 .slide--choice .slide-heading h2 {
   font-size: 72px;
+}
+
+.narrative-visual--choice {
+  left: 72px;
+  bottom: 214px;
+  width: 770px;
+  height: 470px;
+  opacity: 0.74;
+  object-position: center;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 0 50%, transparent 86%);
+  mask-image: radial-gradient(ellipse at center, #000 0 50%, transparent 86%);
 }
 
 .choice-grid {
@@ -1037,6 +1086,7 @@ body::before {
   position: absolute;
   left: 124px;
   bottom: 147px;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1214,6 +1264,17 @@ body::before {
 
 /* Slide 09 — Audience */
 
+.narrative-visual--audience {
+  top: 34px;
+  left: 44px;
+  width: 1832px;
+  height: 380px;
+  opacity: 0.5;
+  object-position: center 42%;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 48%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 48%, transparent 100%);
+}
+
 .audience-grid {
   position: relative;
   z-index: 3;
@@ -1269,6 +1330,17 @@ body::before {
   text-transform: uppercase;
 }
 
+.audience-item--invitation {
+  padding-right: 16px;
+  padding-left: 18px;
+  border-top: 1px solid rgba(227, 180, 94, 0.48);
+  background: linear-gradient(90deg, rgba(168, 111, 46, 0.15), transparent 72%);
+}
+
+.audience-item--invitation strong {
+  color: var(--gold);
+}
+
 .audience-footer {
   position: absolute;
   left: 140px;
@@ -1288,6 +1360,17 @@ body::before {
 
 .room-heading h2 {
   font-size: 66px;
+}
+
+.narrative-visual--room {
+  right: 56px;
+  bottom: 36px;
+  width: 790px;
+  height: 380px;
+  opacity: 0.82;
+  object-position: center;
+  -webkit-mask-image: radial-gradient(ellipse at 68% 68%, #000 0 48%, transparent 86%);
+  mask-image: radial-gradient(ellipse at 68% 68%, #000 0 48%, transparent 86%);
 }
 
 .room-questions {
@@ -1342,6 +1425,8 @@ body::before {
 }
 
 .room-prompt {
+  position: relative;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
